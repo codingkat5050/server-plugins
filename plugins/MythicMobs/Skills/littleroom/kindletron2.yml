@@ -1,0 +1,264 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+### DEBUG ###
+
+debug2:
+  Skills:
+  #- effect:particles{particle=flame;amount=25;hS=.25;vS=.25}
+  
+
+
+
+KINDLETRON2_idlesound:
+  Cooldown: 2
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.kindletron_idle_40ticks;v=3;sc=HOSTILE} @self
+  
+  
+### BOSSBAR ###
+
+
+KINDLETRON2_bossbar_damage:
+  Conditions:
+  Skills: 
+  - barSet{name="KINDLETRON2";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=WHITE;style=SEGMENTED_6} @self
+  - delay 2
+  - barSet{name="KINDLETRON2";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=RED;style=SEGMENTED_6} @self
+  - delay 2
+  - barSet{name="KINDLETRON2";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=WHITE;style=SEGMENTED_6} @self
+  - delay 2
+  - barSet{name="KINDLETRON2";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=RED;style=SEGMENTED_6} @self
+
+
+#MOBILITY#
+
+
+KINDLETRON2_glide:
+  Cooldown: 5
+  Conditions:
+  - offgcd true
+  - incombat true
+  - targetwithin{d=24} true
+  - targetnotwithin{d=12} true
+  Skills:
+  - gcd{ticks=50}
+  - lockmodel{l=true} @self
+  - state{s=glide} @self
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.glide;v=3;sc=HOSTILE} @self
+  - delay 10  
+  - shootfireball{y=0;v=4;i=true;small=true;ft=1;repeat=20;repeatInterval=1} @forward{f=0;y=-2}
+  - changepart{m=kindletron2;pid=torso;nm=kindletron2_damaged;npid=torso_glide} @self
+  - effect:particles{particle=squid_ink;amount=1;hS=.1;vS=.1;speed=0.5;size=2;repeat=10;repeatInterval=1;d=true;dir=0,-1,0} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;x=-1}
+  - effect:particles{particle=squid_ink;amount=1;hS=.1;vS=.1;speed=0.5;size=2;repeat=10;repeatInterval=1;d=true;dir=0,-1,0} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;x=0}
+  - effect:particles{particle=flame;amount=5;hS=.1;vS=.1;speed=0.5;size=2;repeat=5;repeatInterval=1;d=true;dir=0,-1,0} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;x=-1}
+  - effect:particles{particle=flame;amount=5;hS=.1;vS=.1;speed=0.5;size=2;repeat=5;repeatInterval=1;d=true;dir=0,-1,0} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;x=0}
+  - lunge{v=1;vy=.1;repeat=10;repeatInterval=1} @target
+  - delay 10
+  - lunge{v=1;vy=.2;repeat=10;repeatInterval=1} @target
+  - delay 10
+  - changepart{m=kindletron2;pid=torso;nm=kindletron2;npid=torso} @self
+  - lunge{v=1;vy=.6} @target{y=3}
+  - delay 15
+  - lunge{v=5;vy=-5} @target
+  - delay 5
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.land;v=3;sc=HOSTILE} @self
+  - effect:particles{particle=block;material=stone;amount=150;hs=1;vs=.15} @self
+  - skill{s=KINDLETRON2_explode_recoil} @pir{r=6}
+  - damage{a=1} @pir{r=5}
+  - throw{v=12;vy=5} @pir{r=5}
+  - lockmodel{l=false} @self
+
+
+
+
+#ATTACKS#
+
+KINDLETRON2_attack1_sync:
+  Skills:
+  - CancelEvent
+  - skill{s=KINDLETRON2_attack1} @self
+  
+KINDLETRON2_attack1:
+  Cooldown: 10
+  Conditions:
+  - incombat true
+  - targetwithin{d=6} true
+  - offgcd true
+  Skills:
+  - gcd{ticks=55}
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.saw;v=1;sc=HOSTILE} @self
+  - lockmodel{l=true} @self
+  - state{s=attack_1} @self
+  - setspeed{t=walk;s=0} @self
+  - skill{s=KINDLETRON2_randomswing}
+  - delay 10
+  - delay 5
+  - skill{s=KINDLETRON2_randomswing}
+  - throw{v=5;vy=.5} @pir{r=3}
+  - summon{t=KINDLETRON2_dummy;repeat=20;repeatInterval=1} @modelpart{mid=kindletron2;pid=blade}
+  - totem{ch=1;md=2;oT=debug2;oT=KINDLETRON2_attack_1fx;oH=KINDLETRON2_attack_1_damage;hS=3;vS=3;hnp=true;repeat=20;repeatInterval=1;hnp=false} @modelpart{mid=kindletron2;pid=blade}
+  - lunge{v=.5;vy=.01;repeat=20;repeatInterval=1} @children{target=armorstands}
+  - delay 40
+  - remove @children{target=armorstands}
+  - lockmodel{l=false} @self
+  - setspeed{t=walk;s=1.25} @self
+  
+
+KINDLETRON2_attack_1fx:
+  Skills:
+  - effect:particles{particle=block;material=stonew;amount=5;hs=.1;vs=.1;y=-2}
+  
+
+KINDLETRON2_attack2_sync:
+  Skills:
+  - CancelEvent
+  - skill{s=KINDLETRON2_attack2} @self
+  
+KINDLETRON2_attack2:
+  Conditions:
+  - incombat true
+  - offgcd true
+  Skills:
+  #- lockmodel{l=true} @self
+  - gcd{ticks=55}
+  - state{s=attack_2} @self
+  - setspeed{t=walk;s=0} @self
+  - skill{s=KINDLETRON2_randomswing}
+  - delay 25
+  - skill{s=KINDLETRON2_randomswing}
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.swing;v=1;sc=HOSTILE} @self
+  - throw{v=8;vy=.5} @pir{r=4}
+  - lunge{v=.5;vy=.1} @target
+  - totem{ch=1;md=2;oT=debug2;oH=KINDLETRON2_attack_2_damage;hS=3;vS=4;hnp=true;repeat=7;repeatInterval=1;hnp=false} @modelpart{mid=kindletron2;pid=blade}
+  - delay 30
+  #- lockmodel{l=false} @self
+  - setspeed{t=walk;s=1.25} @self
+
+
+KINDLETRON2_attack_1_damage:
+  Skills:
+  - skill{s=KINDLETRON2_randomimpact}
+  - skill{s=KINDLETRON2_explode_recoil}
+  - damage{a=.25;pi=true}
+  - skill{s=KINDLETRON2_bloodfx}
+  
+KINDLETRON2_attack_2_damage:
+  Skills:
+  - skill{s=KINDLETRON2_randomimpact}
+  - skill{s=KINDLETRON2_explode_recoil}
+  - damage{a=1}
+  - throw{v=12;vy=6}
+  - skill{s=KINDLETRON2_bloodfx}
+  
+KINDLETRON2_bloodfx:
+  Skills:
+  - effect:particles{particle=reddust;amount=5;hs=.1;vs=.1;y=.5}
+  - effect:particles{particle=block;material=redstone_block;amount=25;hs=.1;vs=.1;y=.5}
+  
+KINDLETRON2_dummy_lifespan:
+  Skills:
+  - delay 1
+  - pull{velocity=6;repeat=2;repeatInterval=1}
+  - delay 2
+  - remove @self
+  
+### DEATH ###
+
+
+
+# EXPLOSION FX #
+
+KINDLETRON2_explosionfx:
+  Skills:
+  - skill{s=KINDLETRON2_explode_recoil} @pir{r=16}
+  - effect:particles{particle=flash;amount=1}
+  - damage{amount=3;element=FIRE} @EntitiesNearOrigin{r=3}
+  - summon{t=KINDLETRON2_explodeFX;a=3}
+  - delay 1
+  - throw{velocity=8;velocityY=3} @EntitiesNearOrigin{r=6}
+
+KINDLETRON2_explodeFX:
+  Skills:
+  - delay 30
+  - remove @self
+
+KINDLETRON2_explode_recoil:
+  Skills:
+  - recoil{r=15;pitch=-.5}
+  - delay 1
+  - recoil{r=15;pitch=.4}
+  - delay 1
+  - recoil{r=15;pitch=-.3}
+  - delay 1
+  - recoil{r=15;pitch=.2}
+
+
+# DEATH #
+
+KINDLETRON2_death:
+  Skills:
+  - stopsound{s=littleroom_kindletron3:littleroom.kindletron3.saw;sc=HOSTILE} @PIR{r=16}
+  - delay 3
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.death;v=2;sc=HOSTILE} @self
+  - effect:particles{particle=large_smoke;amount=2;hS=.1;vS=.1;speed=0.1;size=2;repeat=60;repeatInterval=1;d=true;dir=0,1,0} @modelpart{mid=kindletron2;pid=right_arm;offset=LOCAL;y=-1}
+  - totem{ch=1;md=2;oS=KINDLETRON2_explosionfx} @modelpart{mid=kindletron2;pid=right_arm;offset=LOCAL;y=-1}
+  - changepart{m=kindletron2;pid=right_arm;nm=kindletron2_damaged;npid=right_arm_damage_1} @self
+  - submodel{model=kindletron2;subpart=right_forearm;remove=true} @self
+  - submodel{model=kindletron2;subpart=blade;remove=true} @self
+  - delay 19
+  - changepart{m=kindletron2;pid=torso;nm=kindletron2_damaged;npid=torso_damage_1} @self
+  - effect:particles{particle=large_smoke;amount=2;hS=.1;vS=.1;speed=0.1;size=2;repeat=60;repeatInterval=1;d=true;dir=0,1,0} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;y=1;x=-1}
+  - totem{ch=1;md=2;oS=KINDLETRON2_explosionfx} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;y=1;x=-1}
+  - delay 30
+  - changepart{m=kindletron2;pid=torso;nm=kindletron2_damaged;npid=torso_damage_2} @self
+  - effect:particles{particle=large_smoke;amount=2;hS=.1;vS=.1;speed=0.1;size=2;repeat=60;repeatInterval=1;d=true;dir=0,1,0} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;y=1;x=1}
+  - totem{ch=1;md=2;oS=KINDLETRON2_explosionfx} @modelpart{mid=kindletron2;pid=torso;offset=LOCAL;y=1;x=1}
+  - delay 29
+  - changepart{m=kindletron2;pid=torso;nm=kindletron2_damaged;npid=torso_damage_3} @self
+  - effect:particles{particle=large_smoke;amount=2;hS=.1;vS=.1;speed=0.1;size=2;repeat=60;repeatInterval=1;d=true;dir=0,1,0} @modelpart{mid=kindletron2;pid=head}
+  - totem{ch=1;md=2;oS=KINDLETRON2_explosionfx} @modelpart{mid=kindletron2;pid=head}
+  - submodel{model=kindletron2;subpart=head;remove=true} @self
+  
+#### SOUND ####
+
+
+KINDLETRON2_randomswing:
+  Skills:
+  - randomskill{skills=KINDLETRON2_sword_swing01,KINDLETRON2_sword_swing02,KINDLETRON2_sword_swing03,KINDLETRON2_sword_swing04} @self
+  
+KINDLETRON2_sword_swing01:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.sword_swing01;v=2;sc=HOSTILE} @self
+KINDLETRON2_sword_swing02:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.sword_swing02;v=2;sc=HOSTILE} @self
+KINDLETRON2_sword_swing03:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.sword_swing03;v=2;sc=HOSTILE} @self
+KINDLETRON2_sword_swing04:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.sword_swing04;v=2;sc=HOSTILE} @self
+
+
+KINDLETRON2_randomimpact:
+  Cooldown: 1
+  Skills:
+  - randomskill{skills=KINDLETRON2_impact01,KINDLETRON2_impact02,KINDLETRON2_impact03,KINDLETRON2_impact04} @self
+  
+KINDLETRON2_impact01:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.impact01;v=2;sc=HOSTILE} @self
+  
+KINDLETRON2_impact02:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.impact02;v=2;sc=HOSTILE} @self
+  
+KINDLETRON2_impact03:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.impact03;v=2;sc=HOSTILE} @self
+  
+KINDLETRON2_impact04:
+  Skills:
+  - sound{s=littleroom_kindletron3:littleroom.kindletron3.impact04;v=2;sc=HOSTILE} @self

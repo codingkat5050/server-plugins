@@ -1,86 +1,251 @@
-[16:11:48] [ServerMain/INFO]: Building unoptimized datafixer
-[16:11:50] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[16:11:51] [ServerMain/INFO]: Loaded 7 recipes
-[16:11:52] [Server thread/INFO]: Starting minecraft server version 1.19.3
-[16:11:52] [Server thread/INFO]: Loading properties
-[16:11:52] [Server thread/INFO]: This server is running Paper version git-Paper-386 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 4da844f)
-[16:11:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:11:52] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:11:52] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[16:11:52] [Server thread/INFO]: Default game type: SURVIVAL
-[16:11:52] [Server thread/INFO]: Generating keypair
-[16:11:52] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:11:52] [Server thread/INFO]: Using default channel type
-[16:11:52] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[16:11:52] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[16:11:53] [Server thread/INFO]: [Chunky] Loading Chunky v1.3.52
-[16:11:53] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v5.2.1-fd1d0777
-[16:11:53] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
-[16:11:53] [Server thread/INFO]: [ModelEngine] Loading ModelEngine vR3.0.2
-[16:11:53] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+41-4dc994d
-[16:11:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:11:53] [Server thread/INFO]: Preparing level "world"
-[16:11:53] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[16:11:54] [Server thread/INFO]: Time elapsed: 138 ms
-[16:11:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[16:11:54] [Server thread/INFO]: Time elapsed: 39 ms
-[16:11:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[16:11:54] [Server thread/INFO]: Time elapsed: 32 ms
-[16:11:54] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.52
-[16:11:54] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.2.1-fd1d0777
-[16:11:54] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.19.3)...[0m
-[16:11:54] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality[0m
-[16:11:55] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData
-[16:11:55] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData\worlds
-[16:11:55] [Server thread/INFO]: [MythicMobs] [36mLOADED[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 8 mobs.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 skills.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
-[16:11:56] [Server thread/INFO]: [MythicMobs] [32m✓ MythicMobs v5.2.1 ( build fd1d0777 ) has been successfully loaded![0m[0m
-[16:11:56] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.0.2
-[16:11:57] [Server thread/ERROR]: Error occurred while enabling ModelEngine vR3.0.2 (Is it up to date?)
-java.lang.NullPointerException: Cannot invoke "com.ticxo.modelengine.api.nms.NMSHandler.getWorldHandler()" because the return value of "com.ticxo.modelengine.api.ModelEngineAPI.getNms()" is null
-	at com.ticxo.modelengine.api.model.mananger.InteractionTicker.<init>(InteractionTicker.java:19) ~[Model-Engine-Demo-R3.0.2.jar:?]
-	at com.ticxo.modelengine.ModelEngine.configureInteractionTicker(ModelEngine.java:220) ~[Model-Engine-Demo-R3.0.2.jar:?]
-	at com.ticxo.modelengine.ModelEngine.onEnable(ModelEngine.java:98) ~[Model-Engine-Demo-R3.0.2.jar:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:371) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:544) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_19_R2.CraftServer.enablePlugin(CraftServer.java:578) ~[paper-1.19.3.jar:git-Paper-386]
-	at org.bukkit.craftbukkit.v1_19_R2.CraftServer.enablePlugins(CraftServer.java:492) ~[paper-1.19.3.jar:git-Paper-386]
-	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:635) ~[paper-1.19.3.jar:git-Paper-386]
-	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:434) ~[paper-1.19.3.jar:git-Paper-386]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:301) ~[paper-1.19.3.jar:git-Paper-386]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1101) ~[paper-1.19.3.jar:git-Paper-386]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
-	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
-[16:11:57] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR3.0.2
-[16:11:57] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+41-4dc994d
-[16:11:57] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[16:11:57] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[16:11:57] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
-[16:11:57] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
-[16:11:57] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
-[16:11:57] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[16:11:57] [Server thread/INFO]: [Essentials] Using locale en_CA
-[16:11:57] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[16:11:57] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[16:11:57] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[16:11:57] [Server thread/INFO]: Running delayed init tasks
-[16:11:57] [Server thread/INFO]: Done (5.473s)! For help, type "help"
-[16:11:57] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
-[16:11:57] [Server thread/INFO]: Timings Reset
+[17:09:17] [ServerMain/INFO]: Building unoptimized datafixer
+[17:09:19] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:09:20] [ServerMain/INFO]: Loaded 7 recipes
+[17:09:21] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[17:09:21] [Server thread/INFO]: Loading properties
+[17:09:21] [Server thread/INFO]: This server is running Paper version git-Paper-386 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 4da844f)
+[17:09:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:09:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:09:22] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[17:09:22] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+java.io.IOException: The handle is invalid
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:293) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:308) ~[?:?]
+	at java.io.BufferedInputStream.implRead(BufferedInputStream.java:382) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:361) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:333) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:376) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:219) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:173) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:189) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:161) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:371) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:348) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:437) ~[?:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.19.3.jar:git-Paper-386]
+	Suppressed: java.io.IOException: The handle is invalid
+		at java.io.FileDescriptor.close0(Native Method) ~[?:?]
+		at java.io.FileDescriptor.close(FileDescriptor.java:297) ~[?:?]
+		at java.io.FileInputStream$1.close(FileInputStream.java:523) ~[?:?]
+		at java.io.FileDescriptor.closeAll(FileDescriptor.java:355) ~[?:?]
+		at java.io.FileInputStream.close(FileInputStream.java:521) ~[?:?]
+		at java.io.BufferedInputStream.close(BufferedInputStream.java:580) ~[?:?]
+		at sun.nio.cs.StreamDecoder.implClose(StreamDecoder.java:429) ~[?:?]
+		at sun.nio.cs.StreamDecoder.lockedClose(StreamDecoder.java:268) ~[?:?]
+		at sun.nio.cs.StreamDecoder.close(StreamDecoder.java:253) ~[?:?]
+		at java.io.InputStreamReader.close(InputStreamReader.java:204) ~[?:?]
+		at java.io.BufferedReader.implClose(BufferedReader.java:637) ~[?:?]
+		at java.io.BufferedReader.close(BufferedReader.java:622) ~[?:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.19.3.jar:git-Paper-386]
+[17:09:22] [Server thread/INFO]: Default game type: SURVIVAL
+[17:09:22] [Server thread/INFO]: Generating keypair
+[17:09:22] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:09:22] [Server thread/INFO]: Using default channel type
+[17:09:22] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[17:09:22] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[17:09:22] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[17:09:26] [Server thread/WARN]: Legacy plugin PermissionsPlus v1.5.7 does not specify an api-version.
+[17:09:26] [Server thread/INFO]: [Chunky] Loading Chunky v1.3.52
+[17:09:26] [Server thread/INFO]: [PermissionsPlus] Loading PermissionsPlus v1.5.7
+[17:09:26] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[17:09:26] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v5.2.1-fd1d0777
+[17:09:26] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[17:09:26] [Server thread/INFO]: [ModelEngine] Loading ModelEngine vR3.1.4
+[17:09:26] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+41-4dc994d
+[17:09:26] [Server thread/INFO]: [QuickShop] Loading QuickShop v5.1.1.2
+[17:09:26] [Server thread/INFO]: [QuickShop] QuickShop Reremake - Early boot step - Booting up
+[17:09:26] [Server thread/INFO]: [QuickShop] [OK] Signature Verify
+[17:09:26] [Server thread/INFO]: [QuickShop] [OK] Potential Infection Characteristics Check
+[17:09:26] [Server thread/INFO]: [QuickShop] [OK] Plugin Manifest Check
+[17:09:26] [Server thread/INFO]: [QuickShop] Reading the configuration...
+[17:09:27] [Server thread/INFO]: [QuickShop] Loading messages translation over-the-air (this may need take a while).
+[17:09:27] [Server thread/INFO]: [QuickShop] Translation over-the-air platform selected: Crowdin
+[17:09:27] [Server thread/INFO]: [QuickShop] Checking for translation updates, this may need a while...
+[17:09:27] [Server thread/INFO]: [QuickShop] Loading up integration modules.
+[17:09:27] [Server thread/INFO]: [QuickShop] QuickShop Reremake - Early boot step - Complete
+[17:09:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:09:27] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[17:09:27] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.20.0-dev+41-4dc994d which is not a depend or softdepend of this plugin.
+[17:09:27] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[17:09:27] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[17:09:27] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[17:09:27] [Server thread/INFO]: Preparing level "world"
+[17:09:28] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:09:28] [Server thread/INFO]: Time elapsed: 176 ms
+[17:09:28] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:09:28] [Server thread/INFO]: Time elapsed: 60 ms
+[17:09:28] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:09:28] [Server thread/INFO]: Time elapsed: 46 ms
+[17:09:28] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.52
+[17:09:28] [Server thread/INFO]: [PermissionsPlus] Enabling PermissionsPlus v1.5.7*
+[17:09:29] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.2.1-fd1d0777
+[17:09:30] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.19.3)...[0m
+[17:09:30] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality[0m
+[17:09:30] [Server thread/INFO]: [MythicMobs] MythicMobs Vault Support has been enabled![0m
+[17:09:30] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData
+[17:09:30] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData\worlds
+[17:09:31] [Server thread/INFO]: [MythicMobs] [36mLOADED[0m
+[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] ✗[31m[1m Configuration Error in Mechanic [36mdamage[0m[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] --| [31mFile: [37mC:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\Skills\littleroom\kindletron2.yml[0m[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] --| [35mError Message: [0mCustom damage types require MythicMobs Premium to use.[0m[0m
+[17:09:31] [Server thread/WARN]: [MythicMobs] --| [35mMechanic Line: [0mdamage{amount=3;element=FIRE}[0m[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 11 mobs.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 30 skills.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
+[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓ MythicMobs v5.2.1 ( build fd1d0777 ) has been successfully loaded![0m[0m
+[17:09:32] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.4
+[17:09:32] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.[0m
+[17:09:32] [Server thread/INFO]: [ModelEngine] Compatibility applied: MythicMobs[0m
+[17:09:32] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+41-4dc994d
+[17:09:32] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[17:09:32] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[17:09:32] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[17:09:32] [Server thread/INFO]: [Essentials] Using locale en_CA
+[17:09:32] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[17:09:32] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[17:09:32] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[17:09:32] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[17:09:32] [Server thread/INFO]: [QuickShop] Enabling QuickShop v5.1.1.2
+[17:09:32] [Server thread/INFO]: [QuickShop] QuickShop Reremake
+[17:09:32] [Server thread/INFO]: [QuickShop] Starting plugin self-test, please wait...
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Signature Verify
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Potential Infection Characteristics Check
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Java Runtime Environment Version Test
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Plugin Manifest Check
+[17:09:33] [Server thread/INFO]: [QuickShop] Running QuickShop-Reremake on NMS version v1_19_R2 For Minecraft version 1.19.3
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Spigot Based Server Test
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Old QuickShop Test
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] ModdedServer Based Test
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] CoreSupport Test
+[17:09:33] [Server thread/WARN]: [QuickShop] [WARN] Virtual DisplayItem Support Test: ProtocolLib is not installed, virtual DisplayItem seems will not work on your server.
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] GameVersion supporting Test
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Permission Manager Test
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] PacketListenerAPI Conflict Test
+[17:09:33] [Server thread/INFO]: [QuickShop] [OK] End of life Test
+[17:09:33] [Server thread/INFO]: [QuickShop] Reading the configuration...
+[17:09:33] [Server thread/INFO]: [QuickShop] Developers: PotatoCraft Studio, Netherfoam, Timtower, KaiNoMood (KaiKikuchi), jho5245, Ghost_chu, cakoyo, Ectabro, portlek, log4b0at, Andre601, deadman96385, Vlvxingze, DoctaEnkoda, Mgazul, TiaraRinne, sandtechnology, Starmism, Chris6ix, Rean Schwarzer, mart-r, raphtaliapt, Tim269, creatorfromhell, LoneDev6, judgetread, confuxeon, ibmibmibm, yannicklamprecht, PyvesB, PaulBGD, ORelio, JoschuaSchneider, Starmium, harry0198, efekurbann, tdiant
+[17:09:33] [Server thread/INFO]: [QuickShop] Original author: Netherfoam, Timtower, KaiNoMood
+[17:09:33] [Server thread/INFO]: [QuickShop] Let's start loading the plugin
+[17:09:33] [Server thread/INFO]: [QuickShop] Chat processor selected: Hardcoded BungeeChat Lib
+[17:09:33] [Server thread/INFO]: [QuickShop] Loading plugin translations files...
+[17:09:33] [Server thread/INFO]: [QuickShop] Game assets server selected: Mojang API
+[17:09:33] [Server thread/INFO]: [QuickShop] Loading items translations...
+[17:09:33] [Server thread/INFO]: [QuickShop] Loading enchantments translations...
+[17:09:33] [Server thread/INFO]: [QuickShop] Loading potions translations...
+[17:09:33] [Server thread/WARN]: [QuickShop] You're using Real Display system and that may cause your server lagg, switch to Virtual Display system if you can!
+[17:09:33] [Server thread/INFO]: [QuickShop] Setting up database...
+[17:09:33] [Server thread/INFO]: [QuickShop] Checking and updating database columns, it may take a while...
+[17:09:33] [Server thread/INFO]: [QuickShop] Finished!
+[17:09:33] [Server thread/INFO]: [QuickShop] Selected permission provider: Bukkit
+[17:09:33] [Server thread/INFO]: [QuickShop] Registering commands...
+[17:09:33] [Server thread/INFO]: [QuickShop] Loaded 1 rules for listener blacklist.
+[17:09:33] [Server thread/INFO]: [QuickShop] EventManager selected: QSEventManager
+[17:09:33] [Server thread/INFO]: [QuickShop] Fetching shops from the database...If plugin stuck there, check your database connection.
+[17:09:33] [Server thread/INFO]: [QuickShop] Loading shops from the database...
+[17:09:33] [Server thread/INFO]: [QuickShop] >> Shop Loader Information
+[17:09:33] [Server thread/INFO]: [QuickShop] Total           shops: 0
+[17:09:33] [Server thread/INFO]: [QuickShop] Valid           shops: 0
+[17:09:33] [Server thread/INFO]: [QuickShop] Pending              : 0
+[17:09:33] [Server thread/INFO]: [QuickShop] Waiting worlds loaded: 0
+[17:09:33] [Server thread/INFO]: [QuickShop] Waiting chunks loaded: 0
+[17:09:33] [Server thread/INFO]: [QuickShop] Done! Used 0ms to loaded shops in database.
+[17:09:33] [Server thread/INFO]: [QuickShop] Registering listeners...
+[17:09:33] [Server thread/INFO]: [QuickShop] Registering DisplayCheck task....
+[17:09:33] [Server thread/INFO]: [QuickShop] Cleaning MsgUtils...
+[17:09:33] [Server thread/INFO]: [QuickShop] Cleaning purchase messages from the database that are over a week old...
+[17:09:33] [Server thread/INFO]: [QuickShop] Log actions is enabled, actions will log in the qs.log file!
+[17:09:33] [Server thread/INFO]: [QuickShop] [Shop Purger] Purge not enabled!
+[17:09:33] [Server thread/INFO]: [QuickShop] QuickShop Loaded! 862 ms.
+[17:09:33] [Server thread/INFO]: Running delayed init tasks
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[17:09:33] [Craft Scheduler Thread - 8 - Vault/INFO]: [Vault] Checking for Updates ... 
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [1m[36m[Importing models][0m
+[17:09:33] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[17:09:33] [Server thread/INFO]: [QuickShop] Registering bStats metrics...
+[17:09:33] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [36mImporting kindletron2.bbmodel.[0m
+[17:09:33] [Server thread/INFO]: [QuickShop] Using economy system: EssentialsX Economy
+[17:09:33] [Server thread/WARN]: [QuickShop] QuickShop detected tax account not exists, we're trying to create one. If you see any errors, please change tax-account in config.yml to server owner in-game username
+[17:09:33] [Server thread/INFO]: [Essentials] Created a User for Tax (2c5f00ba-902c-411b-b9b9-9261cf43aee1) for non Bukkit type: com.earth2me.essentials.OfflinePlayer
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [36mImporting kindletron2_damaged.bbmodel.[0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: Missing hitbox.[0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [1m[35m[Generating assets][0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [35mGenerating kindletron2.[0m
+[17:09:33] [Craft Scheduler Thread - 8 - Vault/INFO]: [Vault] No new version available
+[17:09:33] [Server thread/INFO]: [QuickShop] Tax account created.
+[17:09:33] [Server thread/INFO]: Done (12.065s)! For help, type "help"
+[17:09:33] [Server thread/INFO]: Timings Reset
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [35mGenerating kindletron2_damaged.[0m
+[17:09:34] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[17:09:34] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [38;5;46mResource pack zipped.[0m
+[17:10:08] [Server thread/INFO]: Made Frannygkotm a server operator
+[17:10:16] [Server thread/INFO]: Made Mrblockbuster555 a server operator
+[17:11:11] [Server thread/INFO]: Stopping the server
+[17:11:11] [Server thread/INFO]: Stopping server
+[17:11:11] [Server thread/INFO]: [QuickShop] Disabling QuickShop v5.1.1.2
+[17:11:11] [Server thread/INFO]: [QuickShop] QuickShop is finishing remaining work, this may need a while...
+[17:11:11] [Server thread/INFO]: [QuickShop] Please wait for the data to flush its data...
+[17:11:11] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0-dev+41-4dc994d
+[17:11:11] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[17:11:11] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR3.1.4
+[17:11:11] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.2.1-fd1d0777
+[17:11:11] [Server thread/INFO]: [MythicMobs] Disabling Mythic Mobs...[0m
+[17:11:11] [Server thread/INFO]: [MythicMobs] All active settings have been saved.[0m
+[17:11:11] [Server thread/INFO]: [MythicMobs] [36mUNLOADED[0m
+[17:11:11] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[17:11:11] [Server thread/INFO]: [PermissionsPlus] Disabling PermissionsPlus v1.5.7
+[17:11:11] [Server thread/INFO]: [PermissionsPlus] [STDOUT] PermissionsPlus disabled!
+[17:11:11] [Server thread/WARN]: Nag author(s): '[]' of 'PermissionsPlus' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[17:11:11] [Server thread/INFO]: [Chunky] Disabling Chunky v1.3.52
+[17:11:11] [Server thread/INFO]: Saving players
+[17:11:11] [Server thread/INFO]: Saving worlds
+[17:11:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[17:11:11] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[17:11:11] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[17:11:11] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world' in 0.81s
+[17:11:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:11:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.56s
+[17:11:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:11:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.10s
+[17:11:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:11:13] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:11:13] [Server thread/INFO]: Flushing Chunk IO
+[17:11:13] [Server thread/INFO]: Closing Thread Pool
+[17:11:13] [Server thread/INFO]: Closing Server

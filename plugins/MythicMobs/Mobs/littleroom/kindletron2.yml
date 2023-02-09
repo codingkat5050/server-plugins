@@ -1,0 +1,68 @@
+
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+
+kindletron_2:
+  Type: IRON_GOLEM
+  Display: 'Kindletron III' 
+  Health: 250
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - FIRE_TICK 0
+  - FIRE 0
+  AITargetSelectors:
+  - players
+  Options:
+    MovementSpeed: .2
+    PreventOtherDrops: true
+    Despawn: true
+    Persistent: false
+    KnockbackResistance: 1
+    Collidable: true
+    Silent: true
+    FollowRange: 32
+  Skills:
+  - barCreate{name="KINDLETRON2";display="<caster.name>";value=1.0;color=RED;style=SEGMENTED_6} @self ~onSpawn
+  - skill{s=KINDLETRON2_idlesound} @self ~onTimer:40
+  - skill{s=KINDLETRON2_bossbar_damage} @self ~onDamaged
+  - skill{s=KINDLETRON2_glide} @self ~onTimer:20
+  - randomskill{skills=KINDLETRON2_attack1_sync} @self ~onTimer:20
+  - randomskill{skills=KINDLETRON2_attack1_sync,KINDLETRON2_attack2_sync;sync=true} @self ~onAttack
+  - bodyclamp{mh=15;mb=15} @self ~onSpawn
+  - model{mid=kindletron2;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=kindletron2;d=false;i=true;step=1} @self ~onLoad  
+  - skill{s=KINDLETRON2_death} @self ~onDeath
+
+
+KINDLETRON2_explodeFX:
+  Type: SILVERFISH
+  Display: 'explodeFX'
+  Equipment:
+  - torch:0
+  AITargetSelectors:
+  - clear
+  AIGoalSelectors:
+  - clear
+  Options:
+    ApplyInvisibility: true
+    PreventBlockInfection: true
+    Invincible: true
+    Silent: true
+  Skills:
+  - ignite{ticks=40} @PIR{r=2} ~onTimer:5
+  - effect:particles{particle=flame;amount=10;hS=.1;vS=.1;speed=0.02} @self ~onTimer:2
+  - effect:particles{particle=large_smoke;amount=10;hS=.2;vS=.2;speed=0;size=2} @self ~onTimer:2
+  - skill{s=KINDLETRON2_explodeFX} @self ~onSpawn
+  
+KINDLETRON2_dummy:
+  Type: ARMOR_STAND
+  Display: 'dummy'
+  Options:
+    Marker: true
+    Invisible: true
+  Skills:
+  - skill{s=KINDLETRON2_dummy_lifespan} @self ~onSpawn

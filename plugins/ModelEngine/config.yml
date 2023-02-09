@@ -1,6 +1,6 @@
 Model-Engine:
   Slerp-Mode: SLERP
-  Animation-Mode: C
+  Animation-Mode: B
   Movement-Resolution: 0.001
   Compress-Packet: true
   Default-Animations:
@@ -10,7 +10,10 @@ Model-Engine:
     SPAWN: spawn
     DEATH: death
 Model-Generator:
+  Register-Post-Server: true
+  Assets-Post-Server: true
   Enable-Error: true
+  Debug-Level: 1
   Namespace: modelengine
   Compartment-Size: 1000
   Create-Zip: true
