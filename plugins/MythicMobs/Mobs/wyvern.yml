@@ -1,0 +1,37 @@
+Wyvern:
+  Type: WOLF
+  Display: 'your_models_name_to_see_ingame'
+  AIGoalSelectors:
+  - clear
+  - lookaround
+  - lookatplayers
+  - randomstroll
+  - randomFly
+  AITargetSelectors:
+  - clear
+  - attacker
+  - monsters
+  - ownerattacker
+  - ownertarget
+  Health: 35
+  Damage: 3
+  Options:
+    AlwaysShowName: false
+    KnockbackResistance: 0.5
+    Silent: false
+    PreventOtherDrops: true
+    PreventBlockInfection: true
+    PreventMobKillDrops: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+    PreventLeashing: false
+    PreventRenaming: false
+    Tameable: true
+  Skills:
+  - model{mid=wyvern;n=false} @self ~onSpawn
+  ThreatTable:
+    Enabled: TRUE
+  HealthBar:
+    Enabled: true
+    Offset: 0.5

@@ -1,13 +1,14 @@
-[17:09:17] [ServerMain/INFO]: Building unoptimized datafixer
-[17:09:19] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[17:09:20] [ServerMain/INFO]: Loaded 7 recipes
-[17:09:21] [Server thread/INFO]: Starting minecraft server version 1.19.3
-[17:09:21] [Server thread/INFO]: Loading properties
-[17:09:21] [Server thread/INFO]: This server is running Paper version git-Paper-386 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 4da844f)
-[17:09:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:09:21] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:09:22] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[17:09:22] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+[14:34:11] [ServerMain/INFO]: Building unoptimized datafixer
+[14:34:13] [ServerMain/WARN]: You specified a resource pack without providing a sha1 hash. Pack will be updated on the client only if you change the name of the pack.
+[14:34:13] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:34:15] [ServerMain/INFO]: Loaded 7 recipes
+[14:34:16] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[14:34:16] [Server thread/INFO]: Loading properties
+[14:34:16] [Server thread/INFO]: This server is running Paper version git-Paper-386 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 4da844f)
+[14:34:16] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:34:16] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:34:16] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[14:34:16] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
 java.io.IOException: The handle is invalid
 	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
 	at java.io.FileInputStream.read(FileInputStream.java:293) ~[?:?]
@@ -42,210 +43,857 @@ java.io.IOException: The handle is invalid
 		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[terminalconsoleappender-1.3.0.jar:?]
 		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
 		at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.19.3.jar:git-Paper-386]
-[17:09:22] [Server thread/INFO]: Default game type: SURVIVAL
-[17:09:22] [Server thread/INFO]: Generating keypair
-[17:09:22] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:09:22] [Server thread/INFO]: Using default channel type
-[17:09:22] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[17:09:22] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[17:09:22] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[17:09:26] [Server thread/WARN]: Legacy plugin PermissionsPlus v1.5.7 does not specify an api-version.
-[17:09:26] [Server thread/INFO]: [Chunky] Loading Chunky v1.3.52
-[17:09:26] [Server thread/INFO]: [PermissionsPlus] Loading PermissionsPlus v1.5.7
-[17:09:26] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
-[17:09:26] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v5.2.1-fd1d0777
-[17:09:26] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
-[17:09:26] [Server thread/INFO]: [ModelEngine] Loading ModelEngine vR3.1.4
-[17:09:26] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+41-4dc994d
-[17:09:26] [Server thread/INFO]: [QuickShop] Loading QuickShop v5.1.1.2
-[17:09:26] [Server thread/INFO]: [QuickShop] QuickShop Reremake - Early boot step - Booting up
-[17:09:26] [Server thread/INFO]: [QuickShop] [OK] Signature Verify
-[17:09:26] [Server thread/INFO]: [QuickShop] [OK] Potential Infection Characteristics Check
-[17:09:26] [Server thread/INFO]: [QuickShop] [OK] Plugin Manifest Check
-[17:09:26] [Server thread/INFO]: [QuickShop] Reading the configuration...
-[17:09:27] [Server thread/INFO]: [QuickShop] Loading messages translation over-the-air (this may need take a while).
-[17:09:27] [Server thread/INFO]: [QuickShop] Translation over-the-air platform selected: Crowdin
-[17:09:27] [Server thread/INFO]: [QuickShop] Checking for translation updates, this may need a while...
-[17:09:27] [Server thread/INFO]: [QuickShop] Loading up integration modules.
-[17:09:27] [Server thread/INFO]: [QuickShop] QuickShop Reremake - Early boot step - Complete
-[17:09:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:09:27] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[17:09:27] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.20.0-dev+41-4dc994d which is not a depend or softdepend of this plugin.
-[17:09:27] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
-[17:09:27] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[17:09:27] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[17:09:27] [Server thread/INFO]: Preparing level "world"
-[17:09:28] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:09:28] [Server thread/INFO]: Time elapsed: 176 ms
-[17:09:28] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:09:28] [Server thread/INFO]: Time elapsed: 60 ms
-[17:09:28] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:09:28] [Server thread/INFO]: Time elapsed: 46 ms
-[17:09:28] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.52
-[17:09:28] [Server thread/INFO]: [PermissionsPlus] Enabling PermissionsPlus v1.5.7*
-[17:09:29] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.2.1-fd1d0777
-[17:09:30] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.19.3)...[0m
-[17:09:30] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality[0m
-[17:09:30] [Server thread/INFO]: [MythicMobs] MythicMobs Vault Support has been enabled![0m
-[17:09:30] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData
-[17:09:30] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData\worlds
-[17:09:31] [Server thread/INFO]: [MythicMobs] [36mLOADED[0m
-[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
-[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
-[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
-[17:09:31] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] ✗[31m[1m Configuration Error in Mechanic [36mdamage[0m[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] --| [31mFile: [37mC:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\Skills\littleroom\kindletron2.yml[0m[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] --| [35mError Message: [0mCustom damage types require MythicMobs Premium to use.[0m[0m
-[17:09:31] [Server thread/WARN]: [MythicMobs] --| [35mMechanic Line: [0mdamage{amount=3;element=FIRE}[0m[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 11 mobs.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 30 skills.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
-[17:09:32] [Server thread/INFO]: [MythicMobs] [32m✓ MythicMobs v5.2.1 ( build fd1d0777 ) has been successfully loaded![0m[0m
-[17:09:32] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.4
-[17:09:32] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.[0m
-[17:09:32] [Server thread/INFO]: [ModelEngine] Compatibility applied: MythicMobs[0m
-[17:09:32] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+41-4dc994d
-[17:09:32] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[17:09:32] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[17:09:32] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[17:09:32] [Server thread/INFO]: [Essentials] Using locale en_CA
-[17:09:32] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[17:09:32] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[17:09:32] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
-[17:09:32] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[17:09:32] [Server thread/INFO]: [QuickShop] Enabling QuickShop v5.1.1.2
-[17:09:32] [Server thread/INFO]: [QuickShop] QuickShop Reremake
-[17:09:32] [Server thread/INFO]: [QuickShop] Starting plugin self-test, please wait...
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Signature Verify
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Potential Infection Characteristics Check
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Java Runtime Environment Version Test
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Plugin Manifest Check
-[17:09:33] [Server thread/INFO]: [QuickShop] Running QuickShop-Reremake on NMS version v1_19_R2 For Minecraft version 1.19.3
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Spigot Based Server Test
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Old QuickShop Test
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] ModdedServer Based Test
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] CoreSupport Test
-[17:09:33] [Server thread/WARN]: [QuickShop] [WARN] Virtual DisplayItem Support Test: ProtocolLib is not installed, virtual DisplayItem seems will not work on your server.
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] GameVersion supporting Test
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] Permission Manager Test
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] PacketListenerAPI Conflict Test
-[17:09:33] [Server thread/INFO]: [QuickShop] [OK] End of life Test
-[17:09:33] [Server thread/INFO]: [QuickShop] Reading the configuration...
-[17:09:33] [Server thread/INFO]: [QuickShop] Developers: PotatoCraft Studio, Netherfoam, Timtower, KaiNoMood (KaiKikuchi), jho5245, Ghost_chu, cakoyo, Ectabro, portlek, log4b0at, Andre601, deadman96385, Vlvxingze, DoctaEnkoda, Mgazul, TiaraRinne, sandtechnology, Starmism, Chris6ix, Rean Schwarzer, mart-r, raphtaliapt, Tim269, creatorfromhell, LoneDev6, judgetread, confuxeon, ibmibmibm, yannicklamprecht, PyvesB, PaulBGD, ORelio, JoschuaSchneider, Starmium, harry0198, efekurbann, tdiant
-[17:09:33] [Server thread/INFO]: [QuickShop] Original author: Netherfoam, Timtower, KaiNoMood
-[17:09:33] [Server thread/INFO]: [QuickShop] Let's start loading the plugin
-[17:09:33] [Server thread/INFO]: [QuickShop] Chat processor selected: Hardcoded BungeeChat Lib
-[17:09:33] [Server thread/INFO]: [QuickShop] Loading plugin translations files...
-[17:09:33] [Server thread/INFO]: [QuickShop] Game assets server selected: Mojang API
-[17:09:33] [Server thread/INFO]: [QuickShop] Loading items translations...
-[17:09:33] [Server thread/INFO]: [QuickShop] Loading enchantments translations...
-[17:09:33] [Server thread/INFO]: [QuickShop] Loading potions translations...
-[17:09:33] [Server thread/WARN]: [QuickShop] You're using Real Display system and that may cause your server lagg, switch to Virtual Display system if you can!
-[17:09:33] [Server thread/INFO]: [QuickShop] Setting up database...
-[17:09:33] [Server thread/INFO]: [QuickShop] Checking and updating database columns, it may take a while...
-[17:09:33] [Server thread/INFO]: [QuickShop] Finished!
-[17:09:33] [Server thread/INFO]: [QuickShop] Selected permission provider: Bukkit
-[17:09:33] [Server thread/INFO]: [QuickShop] Registering commands...
-[17:09:33] [Server thread/INFO]: [QuickShop] Loaded 1 rules for listener blacklist.
-[17:09:33] [Server thread/INFO]: [QuickShop] EventManager selected: QSEventManager
-[17:09:33] [Server thread/INFO]: [QuickShop] Fetching shops from the database...If plugin stuck there, check your database connection.
-[17:09:33] [Server thread/INFO]: [QuickShop] Loading shops from the database...
-[17:09:33] [Server thread/INFO]: [QuickShop] >> Shop Loader Information
-[17:09:33] [Server thread/INFO]: [QuickShop] Total           shops: 0
-[17:09:33] [Server thread/INFO]: [QuickShop] Valid           shops: 0
-[17:09:33] [Server thread/INFO]: [QuickShop] Pending              : 0
-[17:09:33] [Server thread/INFO]: [QuickShop] Waiting worlds loaded: 0
-[17:09:33] [Server thread/INFO]: [QuickShop] Waiting chunks loaded: 0
-[17:09:33] [Server thread/INFO]: [QuickShop] Done! Used 0ms to loaded shops in database.
-[17:09:33] [Server thread/INFO]: [QuickShop] Registering listeners...
-[17:09:33] [Server thread/INFO]: [QuickShop] Registering DisplayCheck task....
-[17:09:33] [Server thread/INFO]: [QuickShop] Cleaning MsgUtils...
-[17:09:33] [Server thread/INFO]: [QuickShop] Cleaning purchase messages from the database that are over a week old...
-[17:09:33] [Server thread/INFO]: [QuickShop] Log actions is enabled, actions will log in the qs.log file!
-[17:09:33] [Server thread/INFO]: [QuickShop] [Shop Purger] Purge not enabled!
-[17:09:33] [Server thread/INFO]: [QuickShop] QuickShop Loaded! 862 ms.
-[17:09:33] [Server thread/INFO]: Running delayed init tasks
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
-[17:09:33] [Craft Scheduler Thread - 8 - Vault/INFO]: [Vault] Checking for Updates ... 
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [1m[36m[Importing models][0m
-[17:09:33] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
-[17:09:33] [Server thread/INFO]: [QuickShop] Registering bStats metrics...
-[17:09:33] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [36mImporting kindletron2.bbmodel.[0m
-[17:09:33] [Server thread/INFO]: [QuickShop] Using economy system: EssentialsX Economy
-[17:09:33] [Server thread/WARN]: [QuickShop] QuickShop detected tax account not exists, we're trying to create one. If you see any errors, please change tax-account in config.yml to server owner in-game username
-[17:09:33] [Server thread/INFO]: [Essentials] Created a User for Tax (2c5f00ba-902c-411b-b9b9-9261cf43aee1) for non Bukkit type: com.earth2me.essentials.OfflinePlayer
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [36mImporting kindletron2_damaged.bbmodel.[0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: Missing hitbox.[0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [1m[35m[Generating assets][0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [35mGenerating kindletron2.[0m
-[17:09:33] [Craft Scheduler Thread - 8 - Vault/INFO]: [Vault] No new version available
-[17:09:33] [Server thread/INFO]: [QuickShop] Tax account created.
-[17:09:33] [Server thread/INFO]: Done (12.065s)! For help, type "help"
-[17:09:33] [Server thread/INFO]: Timings Reset
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
-[17:09:33] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [35mGenerating kindletron2_damaged.[0m
-[17:09:34] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
-[17:09:34] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [38;5;46mResource pack zipped.[0m
-[17:10:08] [Server thread/INFO]: Made Frannygkotm a server operator
-[17:10:16] [Server thread/INFO]: Made Mrblockbuster555 a server operator
-[17:11:11] [Server thread/INFO]: Stopping the server
-[17:11:11] [Server thread/INFO]: Stopping server
-[17:11:11] [Server thread/INFO]: [QuickShop] Disabling QuickShop v5.1.1.2
-[17:11:11] [Server thread/INFO]: [QuickShop] QuickShop is finishing remaining work, this may need a while...
-[17:11:11] [Server thread/INFO]: [QuickShop] Please wait for the data to flush its data...
-[17:11:11] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.0-dev+41-4dc994d
-[17:11:11] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
-[17:11:11] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR3.1.4
-[17:11:11] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.2.1-fd1d0777
-[17:11:11] [Server thread/INFO]: [MythicMobs] Disabling Mythic Mobs...[0m
-[17:11:11] [Server thread/INFO]: [MythicMobs] All active settings have been saved.[0m
-[17:11:11] [Server thread/INFO]: [MythicMobs] [36mUNLOADED[0m
-[17:11:11] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[17:11:11] [Server thread/INFO]: [PermissionsPlus] Disabling PermissionsPlus v1.5.7
-[17:11:11] [Server thread/INFO]: [PermissionsPlus] [STDOUT] PermissionsPlus disabled!
-[17:11:11] [Server thread/WARN]: Nag author(s): '[]' of 'PermissionsPlus' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
-[17:11:11] [Server thread/INFO]: [Chunky] Disabling Chunky v1.3.52
-[17:11:11] [Server thread/INFO]: Saving players
-[17:11:11] [Server thread/INFO]: Saving worlds
-[17:11:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[17:11:11] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[17:11:11] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[17:11:11] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world' in 0.81s
-[17:11:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:11:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[17:11:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.56s
-[17:11:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:11:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[17:11:13] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.10s
-[17:11:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:11:13] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[17:11:13] [Server thread/INFO]: Flushing Chunk IO
-[17:11:13] [Server thread/INFO]: Closing Thread Pool
-[17:11:13] [Server thread/INFO]: Closing Server
+[14:34:16] [Server thread/INFO]: Default game type: SURVIVAL
+[14:34:16] [Server thread/INFO]: Generating keypair
+[14:34:16] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:34:16] [Server thread/INFO]: Using default channel type
+[14:34:16] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[14:34:16] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[14:34:17] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[14:34:20] [Server thread/WARN]: Legacy plugin PermissionsPlus v1.5.7 does not specify an api-version.
+[14:34:21] [Server thread/INFO]: [Chunky] Loading Chunky v1.3.52
+[14:34:21] [Server thread/INFO]: [PermissionsPlus] Loading PermissionsPlus v1.5.7
+[14:34:21] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[14:34:21] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v5.2.1-fd1d0777
+[14:34:21] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[14:34:21] [Server thread/INFO]: [ModelEngine] Loading ModelEngine vR3.1.4
+[14:34:21] [Server thread/INFO]: [Essentials] Loading Essentials v2.20.0-dev+41-4dc994d
+[14:34:21] [Server thread/INFO]: [QuickShop] Loading QuickShop v5.1.1.2
+[14:34:21] [Server thread/INFO]: [QuickShop] QuickShop Reremake - Early boot step - Booting up
+[14:34:21] [Server thread/INFO]: [QuickShop] [OK] Signature Verify
+[14:34:21] [Server thread/INFO]: [QuickShop] [OK] Plugin Manifest Check
+[14:34:21] [Server thread/INFO]: [QuickShop] [OK] Potential Infection Characteristics Check
+[14:34:21] [Server thread/INFO]: [QuickShop] Reading the configuration...
+[14:34:21] [Server thread/INFO]: [QuickShop] Loading messages translation over-the-air (this may need take a while).
+[14:34:21] [Server thread/INFO]: [QuickShop] Translation over-the-air platform selected: Crowdin
+[14:34:21] [Server thread/INFO]: [QuickShop] Checking for translation updates, this may need a while...
+[14:34:22] [Server thread/INFO]: [QuickShop] Loading up integration modules.
+[14:34:22] [Server thread/INFO]: [QuickShop] QuickShop Reremake - Early boot step - Complete
+[14:34:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:34:22] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[14:34:22] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.20.0-dev+41-4dc994d which is not a depend or softdepend of this plugin.
+[14:34:22] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[14:34:22] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[14:34:22] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[14:34:22] [Server thread/INFO]: Preparing level "world"
+[14:34:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:34:23] [Server thread/INFO]: Time elapsed: 161 ms
+[14:34:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[14:34:23] [Server thread/INFO]: Time elapsed: 48 ms
+[14:34:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[14:34:23] [Server thread/INFO]: Time elapsed: 37 ms
+[14:34:23] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.52
+[14:34:23] [Server thread/INFO]: [PermissionsPlus] Enabling PermissionsPlus v1.5.7*
+[14:34:24] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.2.1-fd1d0777
+[14:34:24] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.19.3)...[0m
+[14:34:24] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality[0m
+[14:34:25] [Server thread/INFO]: [MythicMobs] MythicMobs Vault Support has been enabled![0m
+[14:34:25] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData
+[14:34:25] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\SavedData\worlds
+[14:34:26] [Server thread/INFO]: [MythicMobs] [36mLOADED[0m
+[14:34:26] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[14:34:26] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[14:34:26] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[14:34:26] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] Failed to parse Placeholder '"<caster.hp><&fs><caster.mhp>"': Math and variables in numeric values require premium! Consider getting MythicMobs Premium at www.mythiccraft.io[0m[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] ✗[31m[1m Configuration Error in Mechanic [36mdamage[0m[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] --| [31mFile: [37mC:\Users\lambe\Dropbox\PC (2)\Documents\GitHub\server-plugins\plugins\MythicMobs\Skills\littleroom\kindletron2.yml[0m[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] --| [35mError Message: [0mCustom damage types require MythicMobs Premium to use.[0m[0m
+[14:34:26] [Server thread/WARN]: [MythicMobs] --| [35mMechanic Line: [0mdamage{amount=3;element=FIRE}[0m[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 12 mobs.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 30 skills.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
+[14:34:27] [Server thread/INFO]: [MythicMobs] [32m✓ MythicMobs v5.2.1 ( build fd1d0777 ) has been successfully loaded![0m[0m
+[14:34:27] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR3.1.4
+[14:34:27] [Server thread/INFO]: [MythicMobs] Model Engine Compatibility Loaded.[0m
+[14:34:27] [Server thread/INFO]: [ModelEngine] Compatibility applied: MythicMobs[0m
+[14:34:27] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.0-dev+41-4dc994d
+[14:34:27] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[14:34:27] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[14:34:28] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[14:34:28] [Server thread/INFO]: [Essentials] Using locale en_CA
+[14:34:28] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[14:34:28] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[14:34:28] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[14:34:28] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[14:34:28] [Server thread/INFO]: [QuickShop] Enabling QuickShop v5.1.1.2
+[14:34:28] [Server thread/INFO]: [QuickShop] QuickShop Reremake
+[14:34:28] [Server thread/INFO]: [QuickShop] Starting plugin self-test, please wait...
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] Signature Verify
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] Plugin Manifest Check
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] Java Runtime Environment Version Test
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] Potential Infection Characteristics Check
+[14:34:28] [Server thread/INFO]: [QuickShop] Running QuickShop-Reremake on NMS version v1_19_R2 For Minecraft version 1.19.3
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] Spigot Based Server Test
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] Old QuickShop Test
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] ModdedServer Based Test
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] CoreSupport Test
+[14:34:28] [Server thread/WARN]: [QuickShop] [WARN] Virtual DisplayItem Support Test: ProtocolLib is not installed, virtual DisplayItem seems will not work on your server.
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] GameVersion supporting Test
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] Permission Manager Test
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] PacketListenerAPI Conflict Test
+[14:34:28] [Server thread/INFO]: [QuickShop] [OK] End of life Test
+[14:34:28] [Server thread/INFO]: [QuickShop] Reading the configuration...
+[14:34:28] [Server thread/INFO]: [QuickShop] Developers: PotatoCraft Studio, Netherfoam, Timtower, KaiNoMood (KaiKikuchi), jho5245, Ghost_chu, cakoyo, Ectabro, portlek, log4b0at, Andre601, deadman96385, Vlvxingze, DoctaEnkoda, Mgazul, TiaraRinne, sandtechnology, Starmism, Chris6ix, Rean Schwarzer, mart-r, raphtaliapt, Tim269, creatorfromhell, LoneDev6, judgetread, confuxeon, ibmibmibm, yannicklamprecht, PyvesB, PaulBGD, ORelio, JoschuaSchneider, Starmium, harry0198, efekurbann, tdiant
+[14:34:28] [Server thread/INFO]: [QuickShop] Original author: Netherfoam, Timtower, KaiNoMood
+[14:34:28] [Server thread/INFO]: [QuickShop] Let's start loading the plugin
+[14:34:28] [Server thread/INFO]: [QuickShop] Chat processor selected: Hardcoded BungeeChat Lib
+[14:34:28] [Server thread/INFO]: [QuickShop] Loading plugin translations files...
+[14:34:28] [Server thread/INFO]: [QuickShop] Game assets server selected: Mojang API
+[14:34:28] [Server thread/INFO]: [QuickShop] Loading items translations...
+[14:34:28] [Server thread/INFO]: [QuickShop] Loading enchantments translations...
+[14:34:28] [Server thread/INFO]: [QuickShop] Loading potions translations...
+[14:34:28] [Server thread/WARN]: [QuickShop] You're using Real Display system and that may cause your server lagg, switch to Virtual Display system if you can!
+[14:34:28] [Server thread/INFO]: [QuickShop] Setting up database...
+[14:34:28] [Server thread/INFO]: [QuickShop] Checking and updating database columns, it may take a while...
+[14:34:28] [Server thread/INFO]: [QuickShop] Finished!
+[14:34:28] [Server thread/INFO]: [QuickShop] Selected permission provider: Bukkit
+[14:34:28] [Server thread/INFO]: [QuickShop] Registering commands...
+[14:34:29] [Server thread/INFO]: [QuickShop] Loaded 1 rules for listener blacklist.
+[14:34:29] [Server thread/INFO]: [QuickShop] EventManager selected: QSEventManager
+[14:34:29] [Server thread/INFO]: [QuickShop] Fetching shops from the database...If plugin stuck there, check your database connection.
+[14:34:29] [Server thread/INFO]: [QuickShop] Loading shops from the database...
+[14:34:29] [Server thread/INFO]: [QuickShop] >> Shop Loader Information
+[14:34:29] [Server thread/INFO]: [QuickShop] Total           shops: 0
+[14:34:29] [Server thread/INFO]: [QuickShop] Valid           shops: 0
+[14:34:29] [Server thread/INFO]: [QuickShop] Pending              : 0
+[14:34:29] [Server thread/INFO]: [QuickShop] Waiting worlds loaded: 0
+[14:34:29] [Server thread/INFO]: [QuickShop] Waiting chunks loaded: 0
+[14:34:29] [Server thread/INFO]: [QuickShop] Done! Used 1ms to loaded shops in database.
+[14:34:29] [Server thread/INFO]: [QuickShop] Registering listeners...
+[14:34:29] [Server thread/INFO]: [QuickShop] Registering DisplayCheck task....
+[14:34:29] [Server thread/INFO]: [QuickShop] Cleaning MsgUtils...
+[14:34:29] [Server thread/INFO]: [QuickShop] Cleaning purchase messages from the database that are over a week old...
+[14:34:29] [Server thread/INFO]: [QuickShop] Log actions is enabled, actions will log in the qs.log file!
+[14:34:29] [Server thread/INFO]: [QuickShop] [Shop Purger] Purge not enabled!
+[14:34:29] [Server thread/INFO]: [QuickShop] QuickShop Loaded! 998 ms.
+[14:34:29] [Server thread/INFO]: Running delayed init tasks
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 8 - Vault/INFO]: [Vault] Checking for Updates ... 
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [1m[36m[Importing models][0m
+[14:34:29] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[14:34:29] [Server thread/INFO]: [QuickShop] Registering bStats metrics...
+[14:34:29] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [36mImporting kindletron2.bbmodel.[0m
+[14:34:29] [Server thread/INFO]: [QuickShop] Using economy system: EssentialsX Economy
+[14:34:29] [Server thread/WARN]: [QuickShop] QuickShop detected tax account not exists, we're trying to create one. If you see any errors, please change tax-account in config.yml to server owner in-game username
+[14:34:29] [Server thread/INFO]: [Essentials] Created a User for Tax (2c5f00ba-902c-411b-b9b9-9261cf43aee1) for non Bukkit type: com.earth2me.essentials.OfflinePlayer
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [36mImporting kindletron2_damaged.bbmodel.[0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/WARN]: [ModelEngine] [33m--Warning: Missing hitbox.[0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [36mImporting wyvern.bbmodel.[0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [1m[35m[Generating assets][0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [35mGenerating kindletron2.[0m
+[14:34:29] [Craft Scheduler Thread - 8 - Vault/INFO]: [Vault] No new version available
+[14:34:29] [Server thread/INFO]: [QuickShop] Tax account created.
+[14:34:29] [Server thread/INFO]: Done (13.392s)! For help, type "help"
+[14:34:29] [Server thread/INFO]: Timings Reset
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [35mGenerating kindletron2_damaged.[0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [35mGenerating wyvern.[0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [0m
+[14:34:29] [Craft Scheduler Thread - 4 - ModelEngine/INFO]: [ModelEngine] [38;5;46mResource pack zipped.[0m
+[14:34:45] [User Authenticator #0/INFO]: UUID of player Mrblockbuster555 is 0fe50204-06a9-4db5-912b-0ceb733acd81
+[14:34:45] [Server thread/INFO]: Mrblockbuster555 joined the game
+[14:34:45] [Server thread/INFO]: Mrblockbuster555[/127.0.0.1:59626] logged in with entity id 230 at ([world]-503.39208165304166, 68.63212607043658, -47.75534274286052)
+[14:35:09] [Server thread/INFO]: Mrblockbuster555 issued server command: /mm egg get Wyvern
+[14:35:31] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode survival
+[14:35:50] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:35:52] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:36:04] [Server thread/INFO]: Mrblockbuster555 issued server command: /mmm Mrblockbuster555 Mrblockbuster555
+[14:36:11] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode creative
+[14:36:43] [Server thread/INFO]: Mrblockbuster555 issued server command: /mm egg get kindletron_2
+[14:36:53] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:36:59] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:37:00] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:37:01] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:37:03] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:37:03] [Server thread/INFO]: Mrblockbuster555 has completed the challenge [Cover Me in Debris]
+[14:37:05] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:37:05] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:37:11] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:37:22] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode survival
+[14:37:40] [Server thread/INFO]: Named entity EntityWolf['your_models_name_to_see_ingame'/295, uuid='010f8485-645e-4b49-91c5-4fc1cd109605', l='ServerLevel[world]', x=-462.88, y=67.00, z=-70.86, cpos=[-29, -5], tl=2999, v=true] died: your_models_name_to_see_ingame was slain by Mrblockbuster555
+[14:37:42] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:38:38] [Server thread/INFO]: Mrblockbuster555 was slain by Kindletron III
+[14:38:57] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode creative
+[14:39:05] [Server thread/INFO]: Mrblockbuster555 issued server command: /back
+[14:39:18] [Server thread/INFO]: Named entity EntityIronGolem['Kindletron III'/528, uuid='5d615e9c-3654-481e-b92f-6237f596fbe6', l='ServerLevel[world]', x=-490.49, y=68.00, z=-80.39, cpos=[-31, -6], tl=3068, v=true] died: Kindletron III was slain by Mrblockbuster555
+[14:39:34] [Server thread/INFO]: Mrblockbuster555 lost connection: Disconnected
+[14:39:34] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.level.ServerPlayer.closeContainer(ServerPlayer.java:1628) ~[?:?]
+	at org.bukkit.craftbukkit.v1_19_R2.entity.CraftHumanEntity.closeInventory(CraftHumanEntity.java:563) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.level.ServerLevel$EntityCallbacks.onTrackingEnd(ServerLevel.java:2606) ~[?:?]
+	at net.minecraft.server.level.ServerLevel$EntityCallbacks.b(ServerLevel.java:2498) ~[?:?]
+	at io.papermc.paper.chunk.system.entity.EntityLookup.entityStatusChange(EntityLookup.java:279) ~[paper-1.19.3.jar:git-Paper-386]
+	at io.papermc.paper.chunk.system.entity.EntityLookup$EntityCallback.a(EntityLookup.java:823) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.world.entity.Entity.setRemoved(Entity.java:4463) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.world.entity.Entity.remove(Entity.java:677) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.world.entity.player.Player.remove(Player.java:1491) ~[?:?]
+	at net.minecraft.server.level.ServerLevel.removePlayerImmediately(ServerLevel.java:1562) ~[?:?]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:624) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:563) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2119) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2098) ~[?:?]
+	at net.minecraft.network.Connection.handleDisconnection(Connection.java:777) ~[?:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:253) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1565) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:440) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1397) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:39:34] [Server thread/INFO]: Mrblockbuster555 left the game
+[14:41:45] [User Authenticator #1/INFO]: UUID of player Mrblockbuster555 is 0fe50204-06a9-4db5-912b-0ceb733acd81
+[14:41:46] [Server thread/INFO]: Mrblockbuster555 joined the game
+[14:41:46] [Server thread/INFO]: Mrblockbuster555[/127.0.0.1:59881] logged in with entity id 1465 at ([world]-517.2178420005253, 63.0, -62.90727428040822)
+[14:42:06] [Server thread/INFO]: Mrblockbuster555 issued server command: /mm egg get SkeletonKing
+[14:42:18] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode survival
+[14:42:39] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1554, uuid='48a1e832-4507-4393-bb0d-954092187772', l='ServerLevel[world]', x=-517.03, y=63.00, z=-59.01, cpos=[-33, -4], tl=148, v=true] died: Skeletal Minion was shot by Skeletal Minion
+[14:42:41] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1562, uuid='c518debb-0f24-4cef-9f86-a96886c427db', l='ServerLevel[world]', x=-515.95, y=64.00, z=-58.09, cpos=[-33, -4], tl=131, v=true] died: Skeletal Minion was shot by Skeletal Minion
+[14:42:41] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1553, uuid='e3f922c9-41e2-454d-a2be-390fdcf684ce', l='ServerLevel[world]', x=-513.33, y=64.00, z=-64.70, cpos=[-33, -5], tl=188, v=true] died: Skeletal Minion was shot by Skeletal Minion
+[14:42:56] [Server thread/INFO]: Mrblockbuster555 was slain by Skeleton King using [Greatsword of the Skeleton King]
+[14:43:03] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode creative
+[14:43:33] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:43:33] [Server thread/INFO]: Mrblockbuster555 has made the advancement [Hot Stuff]
+[14:43:33] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:43:36] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1722, uuid='cbbc6c1c-f31f-46ce-8cbb-1bc5ed32601c', l='ServerLevel[world]', x=-521.55, y=63.00, z=-64.64, cpos=[-33, -5], tl=395, v=true] died: Skeletal Minion tried to swim in lava
+[14:43:41] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1714, uuid='9d06cb90-92e6-4dce-a707-da2166a46fd4', l='ServerLevel[world]', x=-521.51, y=62.00, z=-61.89, cpos=[-33, -4], tl=519, v=true] died: Skeletal Minion tried to swim in lava
+[14:44:11] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:44:12] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:44:14] [Server thread/INFO]: Mrblockbuster555 has made the advancement [Monster Hunter]
+[14:44:14] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1557, uuid='4b48bb56-7e27-48f9-92af-bae496db86b9', l='ServerLevel[world]', x=-520.38, y=65.00, z=-69.48, cpos=[-33, -5], tl=2029, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:16] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1718, uuid='79981cf1-83dd-439a-b6e9-d06e299415d1', l='ServerLevel[world]', x=-515.30, y=69.30, z=-67.04, cpos=[-33, -5], tl=1214, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:22] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1886, uuid='fdc16439-5ead-4ee1-8c1d-b6426038cdf5', l='ServerLevel[world]', x=-510.92, y=70.00, z=-71.31, cpos=[-32, -5], tl=22, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:24] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1887, uuid='38c90185-f6ec-409e-950f-8d2ddd1933fc', l='ServerLevel[world]', x=-504.87, y=69.00, z=-67.67, cpos=[-32, -5], tl=64, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:28] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1877, uuid='28ff1dc8-2a05-43c5-a38e-af89e51d4756', l='ServerLevel[world]', x=-505.39, y=69.00, z=-65.05, cpos=[-32, -5], tl=164, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:31] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1717, uuid='192cd662-31ff-4da1-ab67-5a64748ee524', l='ServerLevel[world]', x=-505.91, y=69.00, z=-60.99, cpos=[-32, -4], tl=1508, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:45] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1721, uuid='87cde902-76fb-4f49-bb2f-794c98b18648', l='ServerLevel[world]', x=-509.60, y=66.79, z=-60.04, cpos=[-32, -4], tl=1775, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:46] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/2035, uuid='4a97e766-0af9-4a7a-a9ac-55be4b7118e5', l='ServerLevel[world]', x=-508.62, y=67.04, z=-59.76, cpos=[-32, -4], tl=61, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:46] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/2049, uuid='2516004f-a8e1-4786-b735-e0d6b1c3addf', l='ServerLevel[world]', x=-510.78, y=64.00, z=-59.80, cpos=[-32, -4], tl=31, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:50] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/2050, uuid='d1db5dbd-c1d5-4e86-8225-cbe9a8a578c9', l='ServerLevel[world]', x=-510.69, y=70.00, z=-70.81, cpos=[-32, -5], tl=106, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:44:55] [Server thread/INFO]: Named entity EntitySkeletonWither['Skeleton King'/1519, uuid='e43a9f61-497b-4f70-821f-a7a88d85459f', l='ServerLevel[world]', x=-514.66, y=70.00, z=-67.80, cpos=[-33, -5], tl=3311, v=true] died: Skeleton King was killed by Mrblockbuster555 using magic
+[14:45:03] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode spectator
+[14:45:09] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode survival
+[14:45:27] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/2043, uuid='34bc78d0-4af5-4eba-a8da-7d9463f5e0ca', l='ServerLevel[world]', x=-515.45, y=64.00, z=-65.70, cpos=[-33, -5], tl=861, v=true] died: Skeletal Minion was slain by Mrblockbuster555
+[14:45:34] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/2036, uuid='0c99cd78-ece2-4315-9634-9340dd35dcb5', l='ServerLevel[world]', x=-503.70, y=69.00, z=-69.01, cpos=[-32, -5], tl=1027, v=true] died: Skeletal Minion was slain by Mrblockbuster555
+[14:45:46] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode creative
+[14:45:49] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:46:03] [Server thread/INFO]: Mrblockbuster555 issued server command: /mm egg get AngrySludge
+[14:46:06] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:46:06] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:46:07] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:46:10] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:46:30] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode survival
+[14:47:18] [Server thread/INFO]: Mrblockbuster555 issued server command: /gamemode creative
+[14:47:31] [Server thread/ERROR]: Could not pass event InventoryCreativeEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onInvClick(GuiEvent.java:40) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor7.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleSetCreativeModeSlot(ServerGamePacketListenerImpl.java:3343) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:18) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundSetCreativeModeSlotPacket.handle(ServerboundSetCreativeModeSlotPacket.java:12) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:47:31] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2923) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:2916) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:48:04] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/2042, uuid='d8ce6657-5d9a-4766-a9ab-38913f0c88b3', l='ServerLevel[world]', x=-506.90, y=69.00, z=-58.46, cpos=[-32, -4], tl=4007, v=true] died: Skeletal Minion was killed by Mrblockbuster555 using magic
+[14:48:10] [Server thread/INFO]: Mrblockbuster555 lost connection: Disconnected
+[14:48:10] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to PermissionsPlus v1.5.7
+java.lang.NoSuchMethodError: 'java.lang.String org.bukkit.inventory.Inventory.getTitle()'
+	at PermissionsPlus.events.GuiEvent.onCloseInv(GuiEvent.java:17) ~[PermissionsPlus.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:git-Paper-386]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:672) ~[paper-api-1.19.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R2.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1543) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.level.ServerPlayer.closeContainer(ServerPlayer.java:1628) ~[?:?]
+	at org.bukkit.craftbukkit.v1_19_R2.entity.CraftHumanEntity.closeInventory(CraftHumanEntity.java:563) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.level.ServerLevel$EntityCallbacks.onTrackingEnd(ServerLevel.java:2606) ~[?:?]
+	at net.minecraft.server.level.ServerLevel$EntityCallbacks.b(ServerLevel.java:2498) ~[?:?]
+	at io.papermc.paper.chunk.system.entity.EntityLookup.entityStatusChange(EntityLookup.java:279) ~[paper-1.19.3.jar:git-Paper-386]
+	at io.papermc.paper.chunk.system.entity.EntityLookup$EntityCallback.a(EntityLookup.java:823) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.world.entity.Entity.setRemoved(Entity.java:4463) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.world.entity.Entity.remove(Entity.java:677) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.world.entity.player.Player.remove(Player.java:1491) ~[?:?]
+	at net.minecraft.server.level.ServerLevel.removePlayerImmediately(ServerLevel.java:1562) ~[?:?]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:624) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:563) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2119) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2098) ~[?:?]
+	at net.minecraft.network.Connection.handleDisconnection(Connection.java:777) ~[?:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:253) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1565) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:440) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1397) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.3.jar:git-Paper-386]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:316) ~[paper-1.19.3.jar:git-Paper-386]
+	at java.lang.Thread.run(Thread.java:1589) ~[?:?]
+[14:48:10] [Server thread/INFO]: Mrblockbuster555 left the game
+[14:51:28] [Server thread/INFO]: Named entity EntitySkeleton['Skeletal Minion'/1878, uuid='0004b517-4e4c-4aff-906c-7b7519c11e39', l='ServerLevel[world]', x=-511.98, y=64.00, z=-53.64, cpos=[-32, -4], tl=8564, v=true] died: Skeletal Minion burned to death

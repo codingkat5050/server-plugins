@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1676068745103
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1676069290273
+  login: 1676068906133
+money: '0'
+last-account-name: Mrblockbuster555
+logoutlocation:
+  world: b484f7fd-df8c-46d5-9919-823e93d0f49c
+  world-name: world
+  x: -501.55644088670715
+  y: 85.20220793788167
+  z: -56.23865000392484
+  yaw: -49.34881591796875
+  pitch: 60.45016860961914
+lastlocation:
+  world: b484f7fd-df8c-46d5-9919-823e93d0f49c
+  world-name: world
+  x: -521.7626247176025
+  y: 60.470483652857645
+  z: -57.876720746562405
+  yaw: -63.907047271728516
+  pitch: 43.64999008178711
