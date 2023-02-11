@@ -1,13 +1,8 @@
 Groups:
-  default:
-    default: true
-    permissions:
-    - modifyworld.*
-  standard:
-    permissions:
-    - quickshop.player
   model:
     permissions:
     - modelengine.command.reload
     - modelengine.command.trait
+  normal:
+    permissions: {}
 Users: {}

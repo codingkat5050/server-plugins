@@ -1,0 +1,27 @@
+prefixPattern: '&e○&6◯  %plugin_name% &e◆ &7'
+useProtocolLib: true
+xpMultiplier: 1.0
+language: en
+registerCraftingRecipes: true
+requirePermission: false
+xpToLevelTwo: 500
+showUnlockMessage: true
+activateParticles: true
+disabledWorlds: []
+backup:
+  enabled: true
+  interval: 60
+  backupLifetimeInMinutes: 43200
+pet_lore:
+- '&8%pet_type%'
+- ''
+- '&7%abilities%'
+- ''
+- '%progress_bar%'
+saveType: SQLITE
+mysql:
+  host: localhost
+  port: 3306
+  database: smallpets
+  username: root
+  password: ''
